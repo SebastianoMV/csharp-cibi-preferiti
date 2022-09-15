@@ -15,4 +15,18 @@ for (int i = 0; i < cibiPrefe.Length; i++)
 
 Console.WriteLine("Il mio cibo preferito è " + cibiPrefe[0]);
 Console.WriteLine("Il mio cibo non troppo preferito è " + cibiPrefe[cibiPrefe.Length - 1]);
+Console.WriteLine("----Bonus----");
+
+
+if (cibiPrefe.Length % 2 == 0)
+{
+    int mediano = cibiPrefe.Length / 2;
+    Console.WriteLine(cibiPrefe[mediano - 1]);
+    Console.WriteLine(cibiPrefe[mediano]);
+}
+else
+{
+    int mediano = cibiPrefe.Length / 2;
+    Console.WriteLine(cibiPrefe[mediano]);
+};
 
